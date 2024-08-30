@@ -89,12 +89,12 @@ const App = () => {
 
       </div>
 
-        <div className="Grid">
+        <div className=" border-black border-2 h-[400px] w-[400px] flex flex-row">
 
         {[...Array(10).keys()].map((_, x) => (
-            <div key={x} className="Column">
+            <div key={x} className="flex flex-col flex-1">
             {[...Array(10).keys()].map((_, y) => (
-              <div key={y} className="Cell">
+              <div key={y} className="flex-1 border border-black text-xl text-center">
               {(x===roombaPos.x && y===roombaPos.y) && 
                 <div 
                   className="text-xl p-1"
